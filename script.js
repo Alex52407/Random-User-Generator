@@ -82,3 +82,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     const user = await fetchRandomUser();
     updateUserUI(user);
 });
+// JavaScript functionality
