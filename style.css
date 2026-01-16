@@ -1,0 +1,148 @@
+/* =====================
+   Reset & Base Styles
+   ===================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4e9f0);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+/* =====================
+   Layout
+   ===================== */
+header {
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.container {
+    width: 100%;
+    max-width: 360px;
+    padding: 1rem;
+}
+
+/* =====================
+   Card
+   ===================== */
+.user-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* =====================
+   Loader
+   ===================== */
+#loader {
+    margin-bottom: 1rem;
+    min-height: 24px;
+}
+
+/* =====================
+   User Photo
+   ===================== */
+.user-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+#user-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+/* =====================
+   User Info
+   ===================== */
+.user-info {
+    margin-bottom: 1.5rem;
+}
+
+#user-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #2c3e50;
+}
+
+#user-email {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+    word-break: break-all;
+}
+
+#user-country {
+    font-size: 0.95rem;
+    color: #777;
+}
+
+/* =====================
+   Actions
+   ===================== */
+.user-actions button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4f8cff, #3b6edc);
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.user-actions button:hover {
+    opacity: 0.95;
+    box-shadow: 0 6px 18px rgba(79, 140, 255, 0.35);
+}
+
+.user-actions button:active {
+    transform: scale(0.98);
+}
+
+/* =====================
+   Responsive
+   ===================== */
+@media (min-width: 768px) {
+    .container {
+        max-width: 420px;
+    }
+
+    #user-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
